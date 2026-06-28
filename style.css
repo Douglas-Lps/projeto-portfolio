@@ -131,7 +131,8 @@ p {
 .container-sobre-mim p {
     color:  rgb(2, 2, 20);
     font-weight:bold;
-    padding-left: 1.8rem;
+    padding-left: 0 0.8rem;
+    text-align: justify;
 }
 
 h3 {
@@ -213,7 +214,7 @@ a {
     margin-top: 16px;
     background-color: #F6F7EB;
     border-radius: 6px;
-    padding: 2rem 1.5rem;
+    padding: 2rem 0.5rem;
 }
 
 
@@ -475,6 +476,20 @@ a {
 }
 
 @media (max-width: 520px) {
+    .banner-principal {
+       
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .ilustracao-foto {
+        width: 50%;
+    }
+
     .btn-social img {
         width: 16px;
     }
