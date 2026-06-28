@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+
+    <div class="container container-header">
+        <p id="portfolio">Portfólio</p>
+        <button class="menu-btn">☰</button>
+        <div class="banner-principal">
+            <div  class="textos-principais">
+                <p >Olá, me chamo</p>
+                <h1>Douglas Lopes de Oliveira</h1>
+                <p class="text-green">Futuro desenvolvedor back-end.</p>
+                <p class="text-green">Se existe vontade, existe um caminho.</p>
+            </div>
+            
+            <div class="ilustracao-foto">
+                <div class="borda-foto"></div>
+                    <img id="" src="./ft-perfil.png" alt="foto de perfil">
+                </div>
+        </div>
+            <nav class="menu">
+                <a id="sobre-mim" href="#sobre-mim">Sobre mim</a>
+                <a id="habilidades" href="#grade-habilidades">Habilidades</a>
+                <a id="projetos" href="#section-projetos">Projetos</a>
+                <a id="info" href="#mais-info">Mais informações</a>
+            </nav>
+    </div>
+</header>
+<main>
+    
+    <div class="container container-main" id="sobre-mim">
+       
+        <section class="container-sobre-mim">
+            <div class="tag-sobre-mim">
+             <div class="circulo"></div>
+             <h3>Sobre mim:</h3>
+            </div>
+            
+            <p>
+            Sou um estudante de tecnologia, me formando em Análise e Desenvolvimento de Sistema, também já fiz alguns cursos na área como: algoritmos e lógica de programação, desenvolvimento front-end com react, básico de java, e estou com o curso de formação em node.js em andamento. Busco estar em constante aprendizado e almejo logo atuar como desenvolvedor back-end.
+            </p>
+            </section> 
+        <section class="container-habilidades" id="grade-habilidades">
+            <div class="tag-habilidades">
+                <div class="circulo"></div>
+                <h3>Habilidades: </h3>
+            </div>
+            <div class="grade-habilidades">
+                    <div class="item-habilidades">
+                        <img src="./javascript.png" alt="javascript">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="item-habilidades"> 
+                        <img src="./nodejs.png" alt="node-js">
+                        <p>NodeJs</p>
+                    </div>
+                    <div class="item-habilidades">
+                        <img src="./mongodb.png" alt="mongo-db">
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="item-habilidades">
+                        <img src="./react240.png" alt="react">
+                        <p>React</p>
+                    </div>
+                
+            </div>
+    
+        </section>
+        <section id="section-projetos" class="container-projetos" >
+            <div class="tag-projetos">
+             <div class="circulo"></div>
+             <h3>Projetos: </h3>
+            </div>
+            <div id="grade-projetos">
+                 <div class="item-projeto">
+                    <img src="./to-do-list.png" alt="projeto A">
+                    <p>Este é uma aplicação para criar uma lista de tarefas.</p>
+                    <a href="https://douglas-lps.github.io/aplicacao-de-tarefas/">Ver Projeto</a>
+                </div>
+                <div class="item-projeto">
+                    <img src="./contador-cliques.png" alt="projeto B">
+                    <p>Esse é um projeto iniciante de simples contador de cliques.</p>
+                    <a href="https://douglas-lps.github.io/contador-de-cliques/">Ver Projeto</a>
+                </div>
+            </div>
+           
+        </section>
+        <aside class="container-info" id="mais-info">
+            <p>Mais informações: </p>
+            <br>
+            <div class="links">
+                
+                <a class="btn-social" href="https://github.com/Douglas-Lps" target="_blank">
+                      <img src="./github-.png" alt="GitHub">
+                      <span>GitHub</span>
+                </a>
+                <a class="btn-social" href="http://www.linkedin.com/in/douglas-lopes-oliveira" target="_blank">
+                      <img src="./linkedin-.png" alt="GitHub">
+                      <span>LinkedIn</span>
+                </a>
+                <a class="btn-social" href="https://www.instagram.com/" target="_blank">
+                      <img src="./instagram.png" alt="GitHub">
+                      <span>Instagram</span>
+                </a>
+            </div>
+        </aside>
+    </div>
+</main>
+<footer>
+    <div class="container rodape">
+    <p>Entre em contato pelo email: douglas@gmail.com</p>
+    <p>© 2026 Douglas Lopes de Oliveira. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    const botao = document.querySelector(".menu-btn");
+    const menu = document.querySelector(".menu");
+
+    botao.addEventListener("click", () => {
+        menu.classList.toggle("ativo");
+
+         if (menu.classList.contains("ativo")) {
+             botao.textContent = "✕";
+        } else {
+             botao.textContent = "☰";
+        }
+    });
+</script>
+</body>
+</html>
+
+
+
+
