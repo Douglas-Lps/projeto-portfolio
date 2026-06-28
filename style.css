@@ -408,6 +408,11 @@ a {
 
 
 @media (max-width: 580px) { 
+
+    .menu a {
+        color: #F6F7EB;
+
+    }
    
     .menu-btn {
         
